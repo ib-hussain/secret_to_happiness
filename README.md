@@ -95,7 +95,10 @@ Rather than imposing strict statistical models on non-linear relationships, we p
 - Rich, governance-strong nations show stable, resilient happiness trajectories
 - Developing nations exhibit volatile, unpredictable paths with sudden reversals
 
-
+<p align="center">
+    <video src="pictures/The Pursuit of Happiness(2011-2023) Wealth, Corruption, and Happiness.mp4" controls="controls" muted="muted" style="max-width:100%;"></video>
+    <br><em>Dynamic Happiness Trajectories (2011–2023). The animation highlights the asymmetry of progress: wealth rises slowly (rightward movement), whereas happiness can collapse rapidly (vertical drops). Clean, high-income nations exhibit stable, clustered trajectories, while developing and more corrupt countries show volatile, fragile paths.</em>
+</p>
 
 ### **4. The "Maslow Reversal": Development Reshapes Human Needs**
 
@@ -129,12 +132,12 @@ Rather than imposing strict statistical models on non-linear relationships, we p
 - Modern well-being trade-offs cannot be explained by traditional poverty-reduction frameworks
 
 <p align="center">
-    <img src="pictures/social factors 2018.png" alt="Social Factors 2018">
+    <img src="pictures/2018 Parallel Coordinates Plot Social Indicators and Their Relationship to Happiness.svg" alt="Social Factors 2018">
     <br><em>Parallel-coordinates plot of social indicators and happiness levels in 2018. Lines coloured by happiness show that high-happiness countries cluster at high Internet Access and high institutional cleanliness, while simultaneously exhibiting higher suicide and obesity rates, highlighting the paradoxical social costs of modern development.</em>
 </p>
 
 <p align="center">
-    <img src="pictures/social factors 2022.png" alt="Social Factors 2022">
+    <img src="pictures/2022 Parallel Coordinates Plot Social Indicators and Their Relationship to Happiness.svg" alt="Social Factors 2022">
     <br><em>Parallel-coordinates plot of social indicators and happiness levels in 2022. Despite global social and psychological volatility, happier nations remain concentrated in regions of strong digital access and low corruption, while also continuing to show elevated suicide and obesity levels, illustrating the persistence of modernity-linked well-being trade-offs.</em>
 </p>
 
@@ -145,12 +148,12 @@ Rather than imposing strict statistical models on non-linear relationships, we p
 - Governance strength predicts resilience better than GDP strength
 
 <p align="center">
-    <img src="pictures/economic factors 2018.png" alt="Economic Factors 2018">
+    <img src="pictures/2018 Parallel Coordinates Plot Economic Indicators and Their Relationship to Happiness.svg" alt="Economic Factors 2018">
     <br><em>Parallel-coordinates plot of GDP, consumption, unemployment, inflation, and happiness in 2018. Lines coloured by happiness show that high-happiness countries cluster along consistently high GDP and consumption levels, with unemployment also aligning to this pattern, while inflation plays only a minor role.</em>
 </p>
 
 <p align="center">
-    <img src="pictures/economic factors 2022.png" alt="Economic Factors 2022">
+    <img src="pictures/2022 Parallel Coordinates Plot Economic Indicators and Their Relationship to Happiness.svg" alt="Economic Factors 2022">
     <br><em>Parallel-coordinates plot of GDP, consumption, unemployment, inflation, and happiness in 2022. Despite the global inflation surge, high-happiness countries remain concentrated in the upper GDP and consumption ranges, demonstrating resilience to price shocks, while lower-income nations exhibit the lowest happiness levels.</em>
 </p>
 
@@ -168,21 +171,12 @@ Rather than imposing strict statistical models on non-linear relationships, we p
 
 ---
 
-## Comprehensive List of Visualisations
-The project employs a suite of complementary analytical approaches to form the visualizations present in this repository, generated via `Visualisations.ipynb`:
-- **Choropleth Maps**: Static and interactive (HTML) mapping of Global Happiness Distribution.
-- **Scatter Plots with Density Contours**: Including Wealth vs. Happiness and Life Expectancy vs. Happiness, multi-dimensionally encoded with bubble sizes (corruption) and colours (health spending).
-- **Heatmaps & Temporal Evolution**: Longitudinal happiness trends for selected performing countries offering insight into decadal stability.
-- **Parallel Coordinates Plots**: Evaluating Economic factors (GDP, consumption, unemployment, inflation) and Social factors (Internet access, corruption, suicide rates, obesity) across both pre-pandemic (2018) and crisis (2022) periods. Separating high versus low-income pathways over time according to Maslow's theory.
-- **Dynamic Trajectory Animation (2011–2023)**: Animated mapping of Wealth, Corruption, and Happiness available as an MP4 and tracked PNG.
-- **Heatmap-Bubble Hybrids**: Linking wealth, corruption, and happiness scores across multiple years (2018, 2019, 2021, and 2022) tracing the diagonal development clustering.
-- **Pair Plots and Distribution Graphs**: Univariate analysis mapping out distributions and structural variations of key demographic, governance, lifestyle, and well-being indicators.
+## Future Research Directions
 
----
-
-## Policy Implications
-
-
+1. **Dynamic Modelling**: Quantify the speed at which shocks propagate through economic and social systems, building on the brittleness observed in temporal trajectories.
+2. **Machine Learning Clustering**: Apply clustering methods to refine the identification of structural "happiness archetypes", enabling predictive classification of countries transitioning between Maslovian tiers.
+3. **Interdisciplinary Integration**: Combine with psychology, behavioural economics, and political science to deepen our understanding of how subjective well-being emerges from the interaction of material conditions, institutions, and societal values.
+4. **Sub-national Analysis**: Investigate within-country regional disparities and inequality effects as subsequent extensions to national-level models.
 
 ---
 
@@ -198,15 +192,5 @@ The project employs a suite of complementary analytical approaches to form the v
 
 - [Visualizations on Social & Electoral Trends](https://github.com/ib-hussain/social-electoral-dynamics)
 - [Assessing Global Resilience to Disasters](https://github.com/ib-hussain/disaster-recovery-analysis)
-
----
-
-## Future Research Directions
-
-1. **Dynamic modeling:** Quantify shock propagation speeds through economic and social systems
-2. **ML clustering:** Identify happiness "archetypes" and predict transitions between governance/developmental states
-3. **Interdisciplinary integration:** Combine with psychology, behavioral economics, and political science for deeper mechanistic understanding
-4. **Predictive models:** Forecast well-being trajectories and governance trap emergence
-5. **Sub-national analysis:** Investigate within-country regional disparities and inequality effects
 
 ---
