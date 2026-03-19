@@ -1,52 +1,40 @@
+<h1 align="center">The Secret to Happiness? </h1>
 
 
-
-
-
-
-
-
-# The Secret to Happiness? 
-
-A comprehensive investigation into the structural determinants of global happiness using multi-dimensional visual analytics and 13 years of development data (2011–2023).
-
-## 📋 Project Overview
-
-This project challenges traditional economic narratives that assume rising income directly increases well-being. Through rigorous data analysis and high-dimensional visualization, we investigate whether **happiness is fundamentally constrained by economic thresholds, filtered by governance quality, and reshaped by human development stages**.
+A comprehensive investigation into the structural determinants of global happiness using multi-dimensional visual analytics and 13 years of development data (2011–2023). This project challenges traditional economic narratives that assume rising income directly increases well-being. Through rigorous data analysis and high-dimensional visualization, we investigate whether **happiness is fundamentally constrained by economic thresholds, filtered by governance quality, and reshaped by human development stages**.
 
 Combining **economic indicators, institutional measures, demographic variables, lifestyle factors, and well-being metrics** across ~150 countries, this study reveals the deeper architecture of global happiness through evidence-based insights rather than intuition.
 
 ---
 
-## 🎯 Core Hypotheses
-
+## Core Hypotheses
 We test three fundamental hypotheses about the nature of national well-being:
 
 ### **Hypothesis A: The "Glass Floor" of Wealth**
 A minimum economic threshold is non-negotiable for national happiness. Below certain GDP levels, cultural or social factors cannot compensate for material deprivation. The analysis tests whether genuinely "Happy Poor" nations exist or whether wealth establishes an unbreakable floor beneath which happiness cannot rise.
 
-**Finding:** ✅ **Confirmed** — No country with structurally low GDP per capita sustains high happiness. The Glass Floor exists.
+**Finding:** **Confirmed** — No country with structurally low GDP per capita sustains high happiness. The Glass Floor exists.
 
 ### **Hypothesis B: The "Governance Multiplier"**
 Once basic economic needs are met, governance quality becomes the dominant predictor of happiness. Corruption functions as a multiplier that amplifies or suppresses the returns of economic growth. Middle-income nations with weak governance remain trapped in moderate well-being despite rising incomes.
 
-**Finding:** ✅ **Confirmed** — Middle-income countries exhibit divergent happiness outcomes based primarily on corruption levels, not income alone. Governance determines the slope of the wealth-happiness relationship.
+**Finding:** **Confirmed** — Middle-income countries exhibit divergent happiness outcomes based primarily on corruption levels, not income alone. Governance determines the slope of the wealth-happiness relationship.
 
 ### **Hypothesis C: The "Maslow Reversal"**
 The drivers of happiness fundamentally shift as nations develop. Low-income nations prioritize physiological and safety needs (health, food security, reduced mortality), whereas high-income nations encounter psychological and lifestyle challenges (isolation, declining fertility, diseases of despair, identity-driven aspirations).
 
-**Finding:** ✅ **Confirmed** — Clear evidence of reversed need hierarchies. Happiness markers diverge completely between income tiers, reflecting different layers of Maslow's hierarchy.
+**Finding:** **Confirmed** — Clear evidence of reversed need hierarchies. Happiness markers diverge completely between income tiers, reflecting different layers of Maslow's hierarchy.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **Temporal Coverage:** 2011–2023 (13 years)  
 **Geographic Scope:** ~150 countries across all regions  
 **Core Data Files:**
 - [HappinesssGlobalData_v6.csv](HappinesssGlobalData_v6.csv) — Primary analysis dataset
 - [df_30_countries.csv](df_30_countries.csv) — Focused 30-country subset for detailed comparison
-- [RawData/](RawData/) — Raw source files, merged datasets, and intermediate processing
+- [RawData](RawData/) — Raw source files, merged datasets, and intermediate processing
 
 **Key Variables Analyzed:**
 - **Economic:** GDP per capita (PPP), household consumption, inflation, unemployment
@@ -58,7 +46,26 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
 
 ---
 
-## 📈 Major Findings & Insights
+## Methodology
+
+### **Data Preprocessing Pipeline**
+1. **Missing data handling:** Forward/backward-filling within countries; targeted imputation for lagged variables
+2. **Temporal normalization:** Separated baseline years (2011–2019) from crisis years (2020–2023) to prevent temporal mismatches
+3. **Outlier management:** Manual review; retention when contextually plausible (e.g., hyperinflation episodes)
+4. **Income tier segmentation:** Classification by World Bank GDP (PPP) thresholds for comparative analysis
+5. **Regional harmonization:** Custom mapping to enable regional pattern analysis
+
+### **Visual Analysis Framework**
+Rather than imposing strict statistical models on non-linear relationships, we prioritized **high-dimensional visual analytics** to reveal patterns, trajectories, and anomalies.
+
+<p align="center">
+    <img src="pictures/Uni-Variate Analysis Distribution of Key Features.png" alt="Univariate distribution">
+    <br><em>Univariate distribution of key economic, demographic, governance, lifestyle, and well-being indicators.</em>
+</p>
+
+---
+
+## Major Findings & Insights
 
 ### **1. The "Iron Law of GDP": Wealth as Foundation**
 - No high-happiness countries without substantial economic capacity
@@ -66,17 +73,29 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
 - Wealthy nations (>USD 40,000 per capita) consistently score 7.0+ on happiness
 - Economic security forms the non-negotiable baseline for subjective well-being
 
+<p align="center">
+    <img src="pictures/Scatter Plot with Density Contours GDP per Capita versus.png" alt="Economic Prosperity and Well-being">
+    <br><em>This visualisation illustrates how GDP per capita and happiness scores vary across countries, with bubble size indicating corruption levels and colour representing health expenditure per capita. The plot highlights how economic strength, healthcare investment, and institutional integrity collectively shape national well-being.</em>
+</p>
+
 ### **2. The "Governance Gradient": The Corruption-Happiness Trap**
 - Once nations cross the middle-income threshold (~USD 10,000-40,000), **governance quality becomes the primary differentiator**
 - Countries with high GDP but weak institutions remain stuck in the "Yellow Zone" (happiness 5.5–6.0)
 - Clean, transparent institutions enable conversion of wealth into genuine life satisfaction
 - Institutional failure causes rapid happiness collapse (sometimes within months), whereas economic recovery takes years
 
+<p align="center">
+    <img src="pictures/Heatmap-Bubble Plot Wealth versus Corruption 2018.png" alt="Happiness Heatmap Wealth vs. Corruption 2018">
+    <br><em>Heatmap–Bubble Plot Illustrating Global Patterns Between Wealth, Corruption, and Happiness (2018). Countries cluster tightly along a diagonal axis linking log GDP per capita to corruption index scores, revealing that economic development and institutional quality advance together. Bubble size reflects average happiness, showing that nations with rising wealth but stagnant governance remain trapped at moderate well-being levels, whereas those with both high prosperity and strong institutional integrity achieve the highest happiness scores.</em>
+</p>
+
 ### **3. Asymmetry of Progress: Fragility of Well-being**
 - Happiness collapses far more quickly than it rises
 - Political crises, currency shocks, or wars create steep vertical drops in well-being
 - Rich, governance-strong nations show stable, resilient happiness trajectories
 - Developing nations exhibit volatile, unpredictable paths with sudden reversals
+
+
 
 ### **4. The "Maslow Reversal": Development Reshapes Human Needs**
 
@@ -92,6 +111,16 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
 - Elevated obesity (conquest of scarcity creates new challenges)
 - High, stable happiness (freedom from survival concerns)
 
+<p align="center">
+    <img src="pictures/Maslow’s Hierarchy of Needs High versus Low-Income Pathways over Time.png" alt="Maslow’s Hierarchy of Needs High versus Low-Income Pathways over Time">
+    <br><em>Maslow’s Hierarchy Divide Across Income Groups (2011–2023). Parallel–coordinates lines compare high-income countries (blue) and low-income countries (orange) across four core human-development indicators: happiness, health expenditure, obesity prevalence, and fertility rates. The contrasting trajectories illustrate the structural split in global development. High-income nations cluster at high happiness and health-investment levels but simultaneously exhibit very low fertility and high obesity, reflecting needs associated with the upper tiers of Maslow’s hierarchy. Low-income nations show the opposite pattern—lower happiness, minimal health expenditure, low obesity, and high fertility—indicating populations operating within the physiological and safety layers of the hierarchy rather than the self-actualisation layers reached by wealthier societies.</em>
+</p>
+
+<p align="center">
+    <img src="pictures/Multi-Variable Bubble Plot Relationships Between Overweight Prevalence, Fertility, Alcohol Consumption, and Happiness.png" alt="Multi-Variable Bubble Plot Relationships Between Overweight Prevalence, Fertility, Alcohol Consumption, and Happiness">
+    <br><em>A bubble plot showing the relationship between overweight prevalence (%) and fertility rate (children per woman). Bubble size represents national happiness scores, while bubble colour indicates alcohol consumption per capita. The plot highlights how lifestyle factors, demographic patterns, and subjective well-being interact across countries.</em>
+</p>
+
 ### **5. The "Modernity Tax": Hidden Costs of Development**
 - Societies that conquer material scarcity face new afflictions:
   - **Obesity & lifestyle diseases** — from over-abundance rather than deprivation
@@ -99,11 +128,31 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
   - **Social isolation** — despite (or because of) digital connectivity
 - Modern well-being trade-offs cannot be explained by traditional poverty-reduction frameworks
 
+<p align="center">
+    <img src="pictures/social factors 2018.png" alt="Social Factors 2018">
+    <br><em>Parallel-coordinates plot of social indicators and happiness levels in 2018. Lines coloured by happiness show that high-happiness countries cluster at high Internet Access and high institutional cleanliness, while simultaneously exhibiting higher suicide and obesity rates, highlighting the paradoxical social costs of modern development.</em>
+</p>
+
+<p align="center">
+    <img src="pictures/social factors 2022.png" alt="Social Factors 2022">
+    <br><em>Parallel-coordinates plot of social indicators and happiness levels in 2022. Despite global social and psychological volatility, happier nations remain concentrated in regions of strong digital access and low corruption, while also continuing to show elevated suicide and obesity levels, illustrating the persistence of modernity-linked well-being trade-offs.</em>
+</p>
+
 ### **6. The "Green Zone Stability Effect"**
 - Countries with strong institutions (low corruption) show marked resilience to external shocks
 - Even during severe crises (2008 financial crisis, 2020 pandemic), clean-governance nations maintained happiness
 - Institutional trust acts as a shock absorber that economic wealth alone cannot provide
 - Governance strength predicts resilience better than GDP strength
+
+<p align="center">
+    <img src="pictures/economic factors 2018.png" alt="Economic Factors 2018">
+    <br><em>Parallel-coordinates plot of GDP, consumption, unemployment, inflation, and happiness in 2018. Lines coloured by happiness show that high-happiness countries cluster along consistently high GDP and consumption levels, with unemployment also aligning to this pattern, while inflation plays only a minor role.</em>
+</p>
+
+<p align="center">
+    <img src="pictures/economic factors 2022.png" alt="Economic Factors 2022">
+    <br><em>Parallel-coordinates plot of GDP, consumption, unemployment, inflation, and happiness in 2022. Despite the global inflation surge, high-happiness countries remain concentrated in the upper GDP and consumption ranges, demonstrating resilience to price shocks, while lower-income nations exhibit the lowest happiness levels.</em>
+</p>
 
 ### **7. Regional Patterns**
 - **Nordic region:** Consistently high happiness (7.3–7.9 across entire period)
@@ -112,198 +161,47 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
 - **Sub-Saharan Africa & conflict zones:** Lower, more volatile happiness trajectories
 - **Middle East & North Africa:** Divergent outcomes; governance quality highly predictive
 
----
-
-## 🎨 Visualizations
-
-The project employs a suite of complementary analytical approaches:
-
-### **1. Choropleth Maps**
-- **Global Happiness Distribution** — Spatial patterns reveal North-South divide and regional clustering
-- **Geographic context** — Preserves actual geographical relationships, enabling regional anomaly detection
-- [Dynamic map available: pictures/GlobalHappiness.html](pictures/GlobalHappiness.html)
-
-### **2. Scatter Plots with Density Contours**
-- **Wealth vs. Happiness** — Multi-dimensional encoding (bubble size = corruption, color = health spending)
-- Reveals "Glass Floor" effect and "Governance Multiplier" in single visualization
-- Optimal for identifying structural clusters and outliers
-
-### **3. Heatmaps & Temporal Evolution**
-- **Longitudinal happiness trends (2011–2024)** for 20 selected countries
-- Nordic consistency vs. global volatility clearly visible
-- Encoding: color intensity = happiness score, temporal axis = years
-
-### **4. Parallel Coordinates Plots**
-- **Economic indicators (2018 & 2022):** GDP, consumption, unemployment, inflation, happiness
-  - Reveals that high-happiness nations maintain elevated profiles across all wealth metrics
-  - Inflation shocks minimally impact wealthy nations
-  - Unemployment more predictive than inflation for well-being
-  
-- **Social indicators (2018 & 2022):** Internet access, corruption, suicide rates, obesity, happiness
-  - High-happiness countries cluster at high digital access + low corruption
-  - Paradoxically show elevated suicide & obesity (modernity trade-offs)
-  
-- **Maslow's Hierarchy divide:** High-income vs. low-income trajectories
-  - Reveals inverted need structures between income groups
-
-### **5. Dynamic Trajectory Animation (2011–2023)**
-- **"The Pursuit of Happiness"** — Grey historical lines + colored current bubbles
-- Bubble color = governance quality (green=clean, red=corrupt)
-- Bubble size = population
-- Shows both where nations are and how they arrived there
-- Exposes asymmetric progress, governance traps, and divergence patterns
-
-### **6. Heatmap-Bubble Hybrids**
-- **Wealth vs. Corruption (2018)** — Reveals tight diagonal clustering
-- Absence of "poor-but-clean" or "rich-but-corrupt" combinations
-- Shows "happiness ceiling" effect in middle-income nations
-- Demonstrates that prosperity and governance rise together (or not at all)
+<p align="center">
+    <img src="pictures/Choropleth Map Global Happiness Score Distribution.png" alt="Global Happiness Distribution">
+    <br><em>Global Happiness Distribution. Geographical representation of average happiness scores across nations, highlighting regional clustering and disparities. You can view the <a href="pictures/GlobalHappiness.html">interactive map </a>here.</em>
+</p>
 
 ---
 
-## 📁 Repository Structure
-
-```
-secret_to_happiness/
-├── README.md                                    # This file
-├── ProjectReport.tex                            # Full academic report (IEEE format)
-├── HappinesssGlobalData_v6.csv                  # Primary analysis dataset
-├── happy.csv                                    # Processed happiness data
-├── df_30_countries.csv                          # 30-country detailed subset
-│
-├── Visualisations.ipynb                         # Main visualization notebook
-│
-├── RawData/
-│   ├── DataProcessing.ipynb                     # Data cleaning & preprocessing
-│   ├── MainVisualisations.ipynb                 # Additional visualization examples
-│   ├── HappinesssGlobalData_v*.csv              # Version history
-│   ├── World_Happiness_Data.csv                 # Alternative source
-│   │
-│   ├── Datasets/                                # Raw source datasets (organized by topic)
-│   │   ├── Main Dataset (Contains the Happiness Target Variable)/
-│   │   ├── GDP Per Capita & Happiness/
-│   │   ├── Alcohol Consumption/
-│   │   ├── Corruption Index/
-│   │   ├── Education Expenditure/
-│   │   ├── Fertility Rate/
-│   │   ├── Final Consumption Per Capita/
-│   │   ├── Health Expenditure per Capita/
-│   │   ├── Homicides/
-│   │   ├── Internet Users/
-│   │   ├── Life Expectancy at Birth/
-│   │   ├── Mean Years of Schooling/
-│   │   ├── Obesity/
-│   │   ├── Population/
-│   │   ├── Poverty/
-│   │   ├── Suicide rates Per 100K/
-│   │   ├── Unemployment/
-│   │   └── Urban Population/
-│   │
-│   └── merged/                                  # Intermediate & final merged datasets
-│       ├── comprehensive_merged_dataset_indexed.csv
-│       ├── FINAL_COMPREHENSIVE_MERGED_DATASET_2011_2024.csv
-│       ├── ULTIMATE_COMPREHENSIVE_DATASET_2011_2024.csv
-│       └── [additional merged variants]
-│
-├── pictures/                                    # Generated visualizations
-│   ├── GlobalHappiness.html                     # Interactive map
-│   ├── Global Health-Fertility-Happiness Relationship.png
-│   ├── Economic Prosperity and Well-being.png
-│   ├── [additional visualizations]
-│   └── Maslow's Hierarchy of Needs visualization
-│
-└── LICENSE                                      # Project license
-```
+## Comprehensive List of Visualisations
+The project employs a suite of complementary analytical approaches to form the visualizations present in this repository, generated via `Visualisations.ipynb`:
+- **Choropleth Maps**: Static and interactive (HTML) mapping of Global Happiness Distribution.
+- **Scatter Plots with Density Contours**: Including Wealth vs. Happiness and Life Expectancy vs. Happiness, multi-dimensionally encoded with bubble sizes (corruption) and colours (health spending).
+- **Heatmaps & Temporal Evolution**: Longitudinal happiness trends for selected performing countries offering insight into decadal stability.
+- **Parallel Coordinates Plots**: Evaluating Economic factors (GDP, consumption, unemployment, inflation) and Social factors (Internet access, corruption, suicide rates, obesity) across both pre-pandemic (2018) and crisis (2022) periods. Separating high versus low-income pathways over time according to Maslow's theory.
+- **Dynamic Trajectory Animation (2011–2023)**: Animated mapping of Wealth, Corruption, and Happiness available as an MP4 and tracked PNG.
+- **Heatmap-Bubble Hybrids**: Linking wealth, corruption, and happiness scores across multiple years (2018, 2019, 2021, and 2022) tracing the diagonal development clustering.
+- **Pair Plots and Distribution Graphs**: Univariate analysis mapping out distributions and structural variations of key demographic, governance, lifestyle, and well-being indicators.
 
 ---
 
-## 🔬 Methodology
+## Policy Implications
 
-### **Data Preprocessing Pipeline**
-1. **Missing data handling:** Forward/backward-filling within countries; targeted imputation for lagged variables
-2. **Temporal normalization:** Separated baseline years (2011–2019) from crisis years (2020–2023) to prevent temporal mismatches
-3. **Outlier management:** Manual review; retention when contextually plausible (e.g., hyperinflation episodes)
-4. **Income tier segmentation:** Classification by World Bank GDP (PPP) thresholds for comparative analysis
-5. **Regional harmonization:** Custom mapping to enable regional pattern analysis
 
-### **Visual Analysis Framework**
-Rather than imposing strict statistical models on non-linear relationships, we prioritized **high-dimensional visual analytics** to reveal patterns, trajectories, and anomalies:
-- Choropleths for spatial distribution
-- Bubble-density plots for multi-dimensional relationships
-- Parallel-coordinates for structural contrasts
-- Temporal animation for decade-long trajectories
 
 ---
 
-## 💡 Policy Implications
-
-### **For Development Agencies:**
-1. **Economic foundation first:** Poverty alleviation remains indispensable; cultural factors cannot compensate for material deprivation
-2. **Governance is not optional:** Institutional reform is essential for translating growth into well-being
-3. **Target middle-income governance gaps:** The middle-income trap is primarily a governance trap; anti-corruption reforms unlock happiness gains
-
-### **For High-Income Nations:**
-1. **New social policy frameworks needed:** Modern risks (obesity, isolation, demographic decline) require different interventions than poverty-reduction models
-2. **Protect institutional trust:** Governance strength is the primary shock absorber during crises
-3. **Address diseases of despair:** Progress conquers material scarcity but creates psychological challenges
-
-### **For Global Policymakers:**
-1. Happiness is fragile and volatile in unstable contexts; resilience stems from institutions, not wealth alone
-2. Development goals must address both material security and psychological well-being
-3. Two global "worlds" exist with fundamentally different problems and solutions
-
----
-
-## 👥 Research Team
+## Research Team
 
 - [**Ibrahim Hussain**](https://github.com/ib-hussain) - [ibrahimbeaconarion@gmail.com](mailto:ibrahimbeaconarion@gmail.com)
-- [**Izhan Nasir**](https://github.com/ib-hussain/social-electoral-dynamics) - [izhan.nasir@gmail.com](mailto:izhan.nasir@gmail.com)
-- [**Ali Asjad**](https://github.com/Asjad-Naqvi) - [ali.asjad@gmail.com](mailto:ali.asjad@gmail.com)
-- [**Sameer Khan**](https://github.com/Sameer-Khan08) - [sameer.khan@gmail.com](mailto:sameer.khan@gmail.com)
+- [**Izhan Nasir**](https://github.com/ib-hussain/social-electoral-dynamics) - [izhan.nasir1@gmail.com](mailto:izhan.nasir1@gmail.com)
+- [**Ali Asjad**](https://github.com/Asjad-Naqvi) - [asjadnaqvi1104@gmail.com](mailto:asjadnaqvi1104@gmail.com)
 
 ---
 
-## 📚 Related Research
+## Related Research
 
-See also: 
 - [Visualizations on Social & Electoral Trends](https://github.com/ib-hussain/social-electoral-dynamics)
 - [Assessing Global Resilience to Disasters](https://github.com/ib-hussain/disaster-recovery-analysis)
 
 ---
 
-## 📖 How to Use This Repository
-
-1. **Start with the findings:** Read the key insights section above
-2. **Explore visualizations:** Open [Visualisations.ipynb](Visualisations.ipynb) in Jupyter to interact with dynamic plots
-3. **Dive into the data:** Use [HappinesssGlobalData_v6.csv](HappinesssGlobalData_v6.csv) for custom analysis
-4. **Review methodology:** See [ProjectReport.tex](ProjectReport.tex) for complete technical documentation
-5. **Replicate analysis:** [RawData/DataProcessing.ipynb](RawData/DataProcessing.ipynb) documents data cleaning steps
-
----
-
-## 📄 Citation
-
-If you use this work in research, please cite:
-
-```
-@inproceedings{nasir2024secret,
-  title={The Secret to Happiness?},
-  author={Nasir, Izhan and Hussain, Ibrahim and Asjad, Ali},
-  booktitle={Proceedings of [Conference/Journal Name]},
-  year={2024},
-  institution={FAST NUCES, Islamabad}
-}
-```
-
----
-
-## ⚖️ License
-
-This project is licensed under the [LICENSE](LICENSE) file included in the repository.
-
----
-
-## 🔭 Future Research Directions
+## Future Research Directions
 
 1. **Dynamic modeling:** Quantify shock propagation speeds through economic and social systems
 2. **ML clustering:** Identify happiness "archetypes" and predict transitions between governance/developmental states
@@ -312,7 +210,3 @@ This project is licensed under the [LICENSE](LICENSE) file included in the repos
 5. **Sub-national analysis:** Investigate within-country regional disparities and inequality effects
 
 ---
-
-## 📧 Contact & Questions
-
-For questions, suggestions, or collaboration inquiries, please reach out to the research team at FAST NUCES.
