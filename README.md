@@ -59,7 +59,7 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
 Rather than imposing strict statistical models on non-linear relationships, we prioritized **high-dimensional visual analytics** to reveal patterns, trajectories, and anomalies.
 
 <p align="center">
-    <img src="pictures/Uni-Variate Analysis Distribution of Key Features.png" alt="Univariate distribution">
+    <img src="https://github.com/ib-hussain/secret_to_happiness/blob/main/pictures/Uni-variate%20Analysis%20Distribution%20of%20Key%20Features.png" alt="Univariate distribution">
     <br><em>Univariate distribution of key economic, demographic, governance, lifestyle, and well-being indicators.</em>
 </p>
 
@@ -89,18 +89,7 @@ Rather than imposing strict statistical models on non-linear relationships, we p
     <br><em>Heatmap–Bubble Plot Illustrating Global Patterns Between Wealth, Corruption, and Happiness (2018). Countries cluster tightly along a diagonal axis linking log GDP per capita to corruption index scores, revealing that economic development and institutional quality advance together. Bubble size reflects average happiness, showing that nations with rising wealth but stagnant governance remain trapped at moderate well-being levels, whereas those with both high prosperity and strong institutional integrity achieve the highest happiness scores.</em>
 </p>
 
-### **3. Asymmetry of Progress: Fragility of Well-being**
-- Happiness collapses far more quickly than it rises
-- Political crises, currency shocks, or wars create steep vertical drops in well-being
-- Rich, governance-strong nations show stable, resilient happiness trajectories
-- Developing nations exhibit volatile, unpredictable paths with sudden reversals
-
-<p align="center">
-    <video src="pictures/The Pursuit of Happiness(2011-2023) Wealth, Corruption, and Happiness.mp4" controls="controls" muted="muted" style="max-width:100%;"></video>
-    <br><em>Dynamic Happiness Trajectories (2011–2023). The animation highlights the asymmetry of progress: wealth rises slowly (rightward movement), whereas happiness can collapse rapidly (vertical drops). Clean, high-income nations exhibit stable, clustered trajectories, while developing and more corrupt countries show volatile, fragile paths.</em>
-</p>
-
-### **4. The "Maslow Reversal": Development Reshapes Human Needs**
+### **3. The "Maslow Reversal": Development Reshapes Human Needs**
 
 **Low-Income Nations** (Operating within Maslow's lower tiers):
 - High fertility rates (biological imperative under mortality risk)
@@ -124,7 +113,7 @@ Rather than imposing strict statistical models on non-linear relationships, we p
     <br><em>A bubble plot showing the relationship between overweight prevalence (%) and fertility rate (children per woman). Bubble size represents national happiness scores, while bubble colour indicates alcohol consumption per capita. The plot highlights how lifestyle factors, demographic patterns, and subjective well-being interact across countries.</em>
 </p>
 
-### **5. The "Modernity Tax": Hidden Costs of Development**
+### **4. The "Modernity Tax": Hidden Costs of Development**
 - Societies that conquer material scarcity face new afflictions:
   - **Obesity & lifestyle diseases** — from over-abundance rather than deprivation
   - **Suicide & mental health crises** — emerging alongside prosperity
@@ -141,7 +130,7 @@ Rather than imposing strict statistical models on non-linear relationships, we p
     <br><em>Parallel-coordinates plot of social indicators and happiness levels in 2022. Despite global social and psychological volatility, happier nations remain concentrated in regions of strong digital access and low corruption, while also continuing to show elevated suicide and obesity levels, illustrating the persistence of modernity-linked well-being trade-offs.</em>
 </p>
 
-### **6. The "Green Zone Stability Effect"**
+### **5. The "Green Zone Stability Effect"**
 - Countries with strong institutions (low corruption) show marked resilience to external shocks
 - Even during severe crises (2008 financial crisis, 2020 pandemic), clean-governance nations maintained happiness
 - Institutional trust acts as a shock absorber that economic wealth alone cannot provide
@@ -157,7 +146,7 @@ Rather than imposing strict statistical models on non-linear relationships, we p
     <br><em>Parallel-coordinates plot of GDP, consumption, unemployment, inflation, and happiness in 2022. Despite the global inflation surge, high-happiness countries remain concentrated in the upper GDP and consumption ranges, demonstrating resilience to price shocks, while lower-income nations exhibit the lowest happiness levels.</em>
 </p>
 
-### **7. Regional Patterns**
+### **6. Regional Patterns**
 - **Nordic region:** Consistently high happiness (7.3–7.9 across entire period)
 - **Western Europe & North America:** Stable, moderate-to-high happiness clusters
 - **Latin America:** Moderate happiness despite economic challenges
