@@ -1,0 +1,14 @@
+# Ib added ignore files
+venv/
+secrets.toml
+*makefile
+*.tmp
+.streamlit/
+TradingAgents-main/
+*.toml
+*.zip
+*.env
+csv/*.csv
+!csv/*v1.0.0*.csv  
+ignore/
+images/*.svs
