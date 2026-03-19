@@ -59,7 +59,7 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
 Rather than imposing strict statistical models on non-linear relationships, we prioritized **high-dimensional visual analytics** to reveal patterns, trajectories, and anomalies.
 
 <p align="center">
-    <img src="https://github.com/ib-hussain/secret_to_happiness/blob/main/pictures/Uni-variate%20Analysis%20Distribution%20of%20Key%20Features.png" alt="Univariate distribution">
+    <img src="pictures/Uni-variate.png" alt="Univariate distribution">
     <br><em>Univariate distribution of key economic, demographic, governance, lifestyle, and well-being indicators.</em>
 </p>
 
