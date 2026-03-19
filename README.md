@@ -34,7 +34,7 @@ The drivers of happiness fundamentally shift as nations develop. Low-income nati
 **Core Data Files:**
 - [HappinesssGlobalData_v6.csv](HappinesssGlobalData_v6.csv) — Primary analysis dataset
 - [df_30_countries.csv](df_30_countries.csv) — Focused 30-country subset for detailed comparison
-- [RawData](RawData/) — Raw source files, merged datasets, and intermediate processing
+- [Data Processing Methodology](RawData/README.md) — Documentation on how raw datasets were ingested, reshaped, and merged.
 
 **Key Variables Analyzed:**
 - **Economic:** GDP per capita (PPP), household consumption, inflation, unemployment
