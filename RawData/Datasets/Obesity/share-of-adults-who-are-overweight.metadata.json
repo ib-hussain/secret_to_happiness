@@ -1,0 +1,37 @@
+{
+  "chart": {
+    "title": "Share of adults who are overweight or obese",
+    "subtitle": "\"Overweight\" is defined here as a body mass index (BMI) above 25. BMI is a person's weight in kilograms divided by their height in meters squared.",
+    "note": "To allow for comparisons between countries and over time, this metric is [age-standardized](#dod:age_standardized).",
+    "citation": "World Health Organization - Global Health Observatory (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/share-of-adults-who-are-overweight?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "Vietnam",
+      "United States",
+      "United Kingdom",
+      "Japan",
+      "India",
+      "Brazil",
+      "Nigeria"
+    ]
+  },
+  "columns": {
+    "Prevalence of overweight among adults, BMI >= 25 (age-standardized estimate) (%) - Sex: both sexes - Age group: 18+  years of age": {
+      "titleShort": "Prevalence of overweight among adults, BMI >= 25 (age-standardized estimate) (%) - Sex: both sexes - Age group: 18+  years of age",
+      "titleLong": "Prevalence of overweight among adults, BMI >= 25 (age-standardized estimate) (%) - Sex: both sexes - Age group: 18+  years of age",
+      "descriptionShort": "Percentage of adults aged 18+ years with a body mass index (BMI) of 25 kg/m2 or higher.",
+      "unit": "%",
+      "timespan": "1990-2022",
+      "type": "Numeric",
+      "owidVariableId": 1056900,
+      "shortName": "prevalence_of_overweight_among_adults__bmi__gt__25__age_standardized_estimate__pct__sex_both_sexes__age_group_18plus__years_of_age",
+      "lastUpdated": "2025-05-19",
+      "nextUpdate": "2026-05-19",
+      "citationShort": "World Health Organization - Global Health Observatory (2025) – processed by Our World in Data",
+      "citationLong": "World Health Organization - Global Health Observatory (2025) – processed by Our World in Data. “Prevalence of overweight among adults, BMI >= 25 (age-standardized estimate) (%) - Sex: both sexes - Age group: 18+  years of age” [dataset]. World Health Organization, “Global Health Observatory” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1056900.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-11-22",
+  "activeFilters": {}
+}

@@ -1,0 +1,35 @@
+{
+  "chart": {
+    "title": "Inflation of consumer prices",
+    "subtitle": "Annual changes in the cost to the average consumer of acquiring a set basket of goods and services. This measure is used to track changes in living costs over time.",
+    "citation": "International Monetary Fund, via World Bank (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/inflation-of-consumer-prices?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World",
+      "Tanzania",
+      "Sweden",
+      "Germany",
+      "United Kingdom",
+      "United States"
+    ]
+  },
+  "columns": {
+    "Inflation, consumer prices (annual %)": {
+      "titleShort": "Inflation, consumer prices (annual %)",
+      "titleLong": "Inflation, consumer prices (annual %)",
+      "shortUnit": "%",
+      "unit": "annual %",
+      "timespan": "1960-2024",
+      "type": "Numeric",
+      "owidVariableId": 1106667,
+      "shortName": "fp_cpi_totl_zg",
+      "lastUpdated": "2025-09-08",
+      "nextUpdate": "2026-09-08",
+      "citationShort": "International Monetary Fund, via World Bank (2025) – processed by Our World in Data",
+      "citationLong": "International Monetary Fund, via World Bank (2025) – processed by Our World in Data. “Inflation, consumer prices (annual %)” [dataset]. International Monetary Fund, via World Bank, “World Development Indicators 122” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1106667.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-11-22",
+  "activeFilters": {}
+}
