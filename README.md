@@ -179,7 +179,6 @@ Rather than imposing strict statistical models on non-linear relationships, we p
 
 ## Related Research
 
-- [Visualizations on Social & Electoral Trends](https://github.com/ib-hussain/social-electoral-dynamics)
 - [Assessing Global Resilience to Disasters](https://github.com/ib-hussain/disaster-recovery-analysis)
 
 ---
